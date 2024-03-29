@@ -3,16 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TC.LoginPage">
+      <class name="TC.HomePage">
         <methods>
+          <include name="test04"/>
+          <include name="test05"/>
+          <include name="test02"/>
+          <include name="test01"/>
           <include name="configBeforeMathod"/>
-          <include name="testcase_05"/>
-          <include name="testcase_03"/>
-          <include name="testcase_01"/>
-          <include name="testcase_04"/>
-          <include name="testcase_02"/>
+          <include name="test07"/>
+          <include name="tearDown"/>
+          <include name="test03"/>
+          <include name="test06"/>
         </methods>
-      </class> <!-- TC.LoginPage -->
+      </class> <!-- TC.HomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,6 +12,15 @@ public class home {
 	  @FindBy(id = "combo_facility")
 	    private WebElement combo_facility;
 	  
+	  @FindBy(linkText = "Tokyo CURA Healthcare Center")
+	  private WebElement Tokyo_CURA_Healthcare_Center;
+	  
+	  @FindBy(linkText = "Hongkong CURA Healthcare Center")
+	  private WebElement Hongkong_CURA_Healthcare_Center;
+	  
+	  @FindBy(linkText = "Seoul CURA Healthcare Center")
+	  private WebElement Seoul_CURA_Healthcare_Center;
+	  
 	  @FindBy(xpath = "//input[@value=\"Medicare\"]")
 	  private WebElement medicare;
 	  
@@ -29,10 +38,36 @@ public class home {
 	  
 	  @FindBy(id = "btn-book-appointment")
 	    private WebElement appointment;
+	  
+	 @FindBy(id = "menu-toggle")
+	  private WebElement menutoggle;
+	 
+	 @FindBy(linkText = "Home" )
+	 private WebElement Home;
+	 
+	 @FindBy(linkText = "History" )
+	 private WebElement History;
+	 
+	 @FindBy(linkText = "Profile" )
+	 private WebElement Profile;
+	 
+	 @FindBy(linkText = "Logout" )
+	 private WebElement Logout;
 	 
 	    
 	  public WebElement getcombo_facility() {
 			return combo_facility;
+		}
+	  
+	  public WebElement getTokyo_CURA_Healthcare_Center() {
+			return Tokyo_CURA_Healthcare_Center;
+		}
+	  public WebElement getHongkong_CURA_Healthcare_Center() {
+			return Hongkong_CURA_Healthcare_Center;
+		}
+	  
+	  public WebElement getSeoul_CURA_Healthcare_Center() {
+			return Seoul_CURA_Healthcare_Center;
 		}
 	  
 	  public WebElement getmedicare() {
@@ -52,5 +87,25 @@ public class home {
 		}
 	  public WebElement getappointment() {
 			return appointment;
+		}
+	  
+	  public WebElement getmenutoggle() {
+			return menutoggle;
+		}
+	  
+	  public WebElement getHome() {
+			return Home;
+		}
+	  
+	  public WebElement getHistory() {
+			return History;
+		}
+	  
+	  public WebElement getProfile() {
+			return Profile;
+		}
+	  
+	  public WebElement getLogout() {
+			return Logout;
 		}
 }

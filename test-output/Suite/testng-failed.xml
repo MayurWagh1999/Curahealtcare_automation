@@ -5,16 +5,13 @@
     <parameter name="browserName" value="chrome"/>
     <parameter name="url" value="https://katalon-demo-cura.herokuapp.com/"/>
     <classes>
-      <class name="TC.LoginPage">
+      <class name="TC.HomePage">
         <methods>
+          <include name="test02"/>
           <include name="configBeforeMathod"/>
-          <include name="testcase_05"/>
-          <include name="testcase_03"/>
-          <include name="testcase_04"/>
-          <include name="testcase_02"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- TC.LoginPage -->
+      </class> <!-- TC.HomePage -->
     </classes>
   </test> <!-- Your Test Name(failed) -->
 </suite> <!-- Failed suite [Suite] -->
